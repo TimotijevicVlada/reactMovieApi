@@ -4,6 +4,44 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+/*Navbar*/
+.navbar {
+    text-align: center;
+    background-color: rgb(96, 181, 202);
+}
+.navbar h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(96, 181, 202);
+    padding: 20px;
+}
+
+/*Search*/
+.search {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 500px;
+}
+.search::placeholder {
+    font-size: 20px;
+}
+
+/*Movie*/
+.movie-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 img {
     width: 100%;
 }
@@ -32,10 +70,6 @@ img {
     height: 30px;
     font-weight: bold;
 }
-.movie-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
 .movie-over {
     background-color: white;
     max-height: 100%;
@@ -51,22 +85,6 @@ img {
 .movie:hover .movie-over {
     transform: translateY(0%);
 }   
-.header {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(96, 181, 202);
-    padding: 20px;
-}
-.search {
-    padding: 10px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-}
-.search::placeholder {
-    font-size: 20px;
-}
 .num.green {
     color: green;
 }
@@ -76,12 +94,19 @@ img {
 .num.red {
     color: red;
 }
-.navbar {
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(96, 181, 202);
-}
-.navbar h1 {
-    padding: 10px;
-    color: white;
+
+@media screen and (max-width: 600px) {
+    .navbar h1 {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .search {
+        padding: 8px;
+        border-radius: 3px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .search::placeholder {
+        font-size: 15px;
+    }
 }
